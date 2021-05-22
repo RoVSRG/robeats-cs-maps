@@ -27,7 +27,7 @@ local function hd(time,track,duration) rtv.HitObjects[#rtv.HitObjects+1] = {Time
 --
 hd(268,3,208)--0
 hd(658,3,130)--1
-nt(892,3)--2
+nt(892,3)--2--
 nt(997,2)--3
 nt(1101,4)--4
 nt(1101,1)--5
