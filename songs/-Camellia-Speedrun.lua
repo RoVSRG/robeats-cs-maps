@@ -2,8 +2,8 @@ local rtv = {}
 
           -- Converted for Robeats CS --
 
-rtv.AudioAssetId = "rbxasset://1747430851"
-rtv.AudioTimeOffset = -70 -- Edit this if needed
+rtv.AudioAssetId = "rbxasset://1747430851" -- hi astral 
+rtv.AudioTimeOffset = -70 -- Edit this if needed --hhhhh
 rtv.AudioVolume = 0.5 -- Do not edit this unless if audio is noticeably too quiet or loud
 
      -- You do not have to edit below here --
