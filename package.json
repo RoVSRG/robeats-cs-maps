@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/RoVSRG/robeats-cs-maps#readme",
   "dependencies": {
-    "md5": "^2.3.0"
+    "log-update": "^4.0.0",
+    "md5": "^2.3.0",
+    "mongoose": "^5.12.12"
   }
 }
