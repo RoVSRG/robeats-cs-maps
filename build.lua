@@ -19,28 +19,15 @@ local metadataOut = {
 }
 
 for i, file in ipairs(dir) do
-    local mapOut = {
-        "local hitObjects = {}\n",
-        "local function note(time,track) hitObjects[#hitObjects+1]={Time=time;Type=1;Track=track;} end",
-        "local function hold(time,track,duration) hitObjects[#hitObjects+1] = {Time=time;Type=2;Track=track;Duration=duration;}  end",
-        ""
-    }
+    local jsonString
     local mapData
     
     local suc, err = pcall(function()
-        local jsonString = remodel.readFile(string.format("songs/%s", file))
+        jsonString = remodel.readFile(string.format("songs/%s", file))
         mapData = json.fromString(jsonString)
     end)
 
     if suc then
-        for _, hitObject in pairs(mapData.HitObjects) do
-            if hitObject.Type == 1 then
-                table.insert(mapOut, string.format("note(%s,%s)", hitObject.Time, hitObject.Track))
-            elseif hitObject.Type == 2 then
-                table.insert(mapOut, string.format("hold(%s,%s,%s)", hitObject.Time, hitObject.Track, hitObject.Duration))
-            end
-        end
-
         mapData.AudioMapData = string.format("###SongMaps:FindFirstChild(\"%s\")", file):gsub(".json", "")
 
         local object = {}
@@ -74,13 +61,11 @@ for i, file in ipairs(dir) do
         print(err)
     end
 
-    table.insert(mapOut, "\nreturn hitObjects")
+    local mapDataValueObject = Instance.new("StringValue")
+    mapDataValueObject.Name = file:gsub(".json", "")
+    mapDataValueObject.Parent = songMaps
 
-    local mapDataModuleScript = Instance.new("ModuleScript")
-    mapDataModuleScript.Name = file:gsub(".json", "")
-    mapDataModuleScript.Parent = songMaps
-
-    remodel.setRawProperty(mapDataModuleScript, "Source", "String", table.concat(mapOut, "\n"))
+    remodel.setRawProperty(mapDataValueObject, "Value", "String", string.gsub(json.toString(mapData.HitObjects), "\n", ""))
     
     print(string.format("Built song %d out of %d (%0.2f%% complete)", i, #dir, (i / #dir) * 100))
 end
