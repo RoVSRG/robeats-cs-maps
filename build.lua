@@ -12,6 +12,16 @@ songMetadata.Parent = maps
 
 print("Building maps for RoBeats CS")
 
+local function clamp(num, min, max)
+    if num > max then
+        return max
+    elseif num < min then
+        return min
+    end
+
+    return num
+end
+
 local metadataOut = {
     "local SongMaps = script.Parent.SongMaps",
     "",
@@ -61,11 +71,26 @@ for i, file in ipairs(dir) do
         print(err)
     end
 
-    local mapDataValueObject = Instance.new("StringValue")
-    mapDataValueObject.Name = file:gsub(".json", "")
-    mapDataValueObject.Parent = songMaps
+    local mapDataFolder = Instance.new("Folder")
+    mapDataFolder.Name = file:gsub(".json", "")
+    mapDataFolder.Parent = songMaps
 
-    remodel.setRawProperty(mapDataValueObject, "Value", "String", string.gsub(json.toString(mapData.HitObjects), "\n", ""))
+    local serializedHitObjects = string.gsub(json.toString(mapData.HitObjects), "\n", "")
+    local numberOfSplits = math.ceil(string.len(serializedHitObjects) / 2e5)
+    
+    local splits = {}
+
+    for i = 1, numberOfSplits do
+        splits[i] = string.sub(serializedHitObjects, 2e5*(i-1)+1, clamp(2e5*i, 2e5, string.len(serializedHitObjects)))
+    end
+
+    for i, split in ipairs(splits) do
+        local mapDataValueObject = Instance.new("StringValue")
+        mapDataValueObject.Name = string.format("%d", i)
+        mapDataValueObject.Parent = mapDataFolder
+
+        remodel.setRawProperty(mapDataValueObject, "Value", "String", split)
+    end
     
     print(string.format("Built song %d out of %d (%0.2f%% complete)", i, #dir, (i / #dir) * 100))
 end
