@@ -6,7 +6,6 @@ const mongoose = require('mongoose');
 const logUpdate = require('log-update')
 
 if (mongoose.connection.readyState == 0) {
-  mongoose.connect('mongodb://127.0.0.1/dev', {useNewUrlParser: true, useUnifiedTopology: true});
 }
 
 const play = require('../models/play')
@@ -17,40 +16,42 @@ const difficulties = require("../misc/difficulties.json")
 function calculateOverallRating(scores) {
   let rating = 0;
   let maxNumOfScores = Math.min(scores.length, 25);
-
+  
   scores.forEach((item, i) => {
-      if (i > maxNumOfScores) {
-          return false
-      }
-
-      if (i <= 10) {
-          rating = rating + item.Rating * 1.5
-      } else {
-          rating = rating + item.Rating;
-      }
+    if (i > maxNumOfScores) {
+      return false
+    }
+    
+    if (i <= 10) {
+      rating = rating + item.Rating * 1.5
+    } else {
+      rating = rating + item.Rating;
+    }
   })
-
+  
   return Math.floor((100 * rating) / 30) / 100
 }
 
 function calculateRating(hash, accuracy, rate) {
   let difficulty = difficulties[hash]
-
+  
   if (!difficulty)
-      return null
-
+  return null
+  
   let ratemult
   
   if (rate >= 1) {
-      ratemult = 1 + (rate-1) * 1.75
+    ratemult = 1 + (rate-1) * 1.75
   } else {
-      ratemult = 1 + (rate-1) * 1.6
+    ratemult = 1 + (rate-1) * 1.6
   }
-
+  
   return ratemult * Math.pow(accuracy / 97, 4) * difficulty
 }
 
 module.exports.up = async function (next) {
+  mongoose.connect('mongodb://127.0.0.1/dev', {useNewUrlParser: true, useUnifiedTopology: true});
+  
   // Recalculate SR values for every single logged score
 
   let count = await play.count()
