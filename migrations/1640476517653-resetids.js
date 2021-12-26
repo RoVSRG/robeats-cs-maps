@@ -17,6 +17,8 @@ module.exports.up = async function (next) {
 
   let count = await play.count(filter)
   let counter = 0
+
+  console.log(`${count} more plays need reid`)
   
   for await (const element of play.find(filter)) {
     counter += 1
