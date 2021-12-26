@@ -13,10 +13,12 @@ const ban = require("../models/ban")
 module.exports.up = async function (next) {
   mongoose.connect('mongodb://127.0.0.1/dev', {useNewUrlParser: true, useUnifiedTopology: true});
 
-  let count = await play.count()
+  const filter = { "_id": { "$type": "string" } }
+
+  let count = await play.count(filter)
   let counter = 0
   
-  for await (const element of play.find({})) {
+  for await (const element of play.find(filter)) {
     counter += 1
     
     let data = element.toObject()
@@ -33,10 +35,10 @@ module.exports.up = async function (next) {
     logUpdate(`Scores ${(counter / count) * 100}% reid...`)
   }
 
-  count = await global.count()
+  count = await global.count(filter)
   counter = 0
 
-  for await (const element of global.find({})) {
+  for await (const element of global.find(filter)) {
     counter += 1
 
     let data = element.toObject()
@@ -53,10 +55,10 @@ module.exports.up = async function (next) {
     logUpdate(`Global ${(counter / count) * 100}% reid...`)
   }
 
-  count = await ban.count()
+  count = await ban.count(filter)
   counter = 0
 
-  for await (const element of ban.find({})) {
+  for await (const element of ban.find(filter)) {
     counter += 1
 
     let data = element.toObject()
