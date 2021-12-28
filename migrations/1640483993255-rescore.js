@@ -57,14 +57,14 @@ module.exports.up = async function (next) {
   let count = await play.count()
   let counter = 0
 
-  for await (const element of play.find({})) {
-    counter += 1
+  // for await (const element of play.find({})) {
+  //   counter += 1
   
-    element.Rating = calculateRating(element.SongMD5Hash, element.Accuracy, element.Rate / 100) || element.Rating
-    element.save()
+  //   element.Rating = calculateRating(element.SongMD5Hash, element.Accuracy, element.Rate / 100) || element.Rating
+  //   element.save()
   
-    logUpdate(`Scores ${(counter / count) * 100}% recalculated...`)
-  }
+  //   logUpdate(`Scores ${(counter / count) * 100}% recalculated...`)
+  // }
 
   // Recalc global stats
 

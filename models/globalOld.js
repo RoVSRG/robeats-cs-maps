@@ -1,6 +1,7 @@
 const mongoose = require('mongoose')
 
 const play = new mongoose.Schema({
+    _id: String,
     TotalMapsPlayed: Number,
     Rating: Number,
     PlayerName: String,
@@ -11,4 +12,4 @@ const play = new mongoose.Schema({
     Allowed: Boolean
 })
 
-module.exports = mongoose.model("Global", play, "Global")
+module.exports = mongoose.model("GlobalOld", play, "Global")

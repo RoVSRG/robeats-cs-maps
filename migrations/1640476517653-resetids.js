@@ -3,11 +3,9 @@
 const mongoose = require('mongoose');
 const logUpdate = require('log-update')
 
-if (mongoose.connection.readyState == 0) {
-}
-
 const play = require('../models/play')
 const global = require('../models/global')
+const globalOld = require('../models/globalOld')
 const ban = require("../models/ban")
 
 module.exports.up = async function (next) {
@@ -20,62 +18,65 @@ module.exports.up = async function (next) {
 
   console.log(`${count} more plays need reid`)
   
-  for await (const element of play.find(filter)) {
-    counter += 1
+  // for await (const element of play.find(filter)) {
+  //   counter += 1
     
-    let data = element.toObject()
-    const id = data._id
+  //   let data = element.toObject()
+  //   const id = data._id
     
-    data._id = undefined
+  //   data._id = undefined
     
-    await play.findByIdAndDelete(id)
+  //   await play.findByIdAndDelete(id)
     
-    const replace = new play(data)
+  //   const replace = new play(data)
 
-    await replace.save()
+  //   await replace.save()
   
-    logUpdate(`Scores ${(counter / count) * 100}% reid...`)
-  }
+  //   logUpdate(`Scores ${(counter / count) * 100}% reid...`)
+  // }
 
-  count = await global.count(filter)
+  count = await globalOld.count()
   counter = 0
 
-  for await (const element of global.find(filter)) {
+  for await (const element of globalOld.find().lean()) {
     counter += 1
 
-    let data = element.toObject()
-    const id = data._id
+    const id = element._id
 
-    data._id = undefined
+    element._id = undefined
 
-    await global.findByIdAndDelete(id)
+    await globalOld.findByIdAndDelete(id)
 
-    const replace = new global(data)
+    const replace = new global(element)
 
     await replace.save()
   
     logUpdate(`Global ${(counter / count) * 100}% reid...`)
+
+    if (counter >= count) {
+      break
+    }
   }
 
-  count = await ban.count(filter)
-  counter = 0
+  // count = await ban.count(filter)
+  // counter = 0
 
-  for await (const element of ban.find(filter)) {
-    counter += 1
+  // for await (const element of ban.find(filter)) {
+  //   counter += 1
 
-    let data = element.toObject()
-    const id = data._id
+  //   let data = element.toObject()
+  //   const id = data._id
 
-    data._id = undefined
+  //   data._id = undefined
 
-    await ban.findByIdAndDelete(id)
+  //   await ban.findByIdAndDelete(id)
 
-    const replace = new ban(data)
+  //   const replace = new ban(data)
 
-    await replace.save()
+  //   await replace.save()
   
-    logUpdate(`Bans ${(counter / count) * 100}% reid...`)
-  }
+  //   logUpdate(`Bans ${(counter / count) * 100}% reid...`)
+  // }
 
   await mongoose.disconnect()
 }
