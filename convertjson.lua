@@ -8,7 +8,10 @@ for _, map in ipairs(parsed) do
   remodel.writeFile(tmppath, source)
 
   local t = require(tmppath:gsub(".lua", ""))
-  local jsondata = json.toString(t)
 
-  remodel.writeFile(string.format("./songs/%s.json", map.Name), jsondata)
+  if type(t) == "table" then
+    local jsondata = json.toString(t)
+
+    remodel.writeFile(string.format("./songs/%s.json", map.Name), jsondata)
+  end
 end
