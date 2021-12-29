@@ -11,7 +11,7 @@ rtv.AudioDescription = "[44] 1.2x (180bpm)"
 --The uploaded id is the DECAL id, you must use the TEXTURE id here. To get the TEXTURE id, paste the full URL of the DECAL id into the Image property of an ImageLabel. There is a debug ImageLabel under ServerStorage in the mapping test place.
 rtv.AudioCoverImageAssetId = "rbxassetid://6843762205"
 --The difficulty number of your map.
-rtv.AudioDifficulty = 69
+rtv.AudioDifficulty = 0
 --The audio time offset of your map in milliseconds. The default value is -75ms.
 rtv.AudioTimeOffset = -75
 --The audio volume of your map. The default value is 0.5.
