@@ -1,0 +1,100 @@
+{
+  "AudioArtist": "YasiCreeper",
+  "AudioAssetId": "rbxassetid://513919776",
+  "AudioCoverImageAssetId": "rbxassetid://6497424358",
+  "AudioDescription": "Sadge",
+  "AudioDifficulty": 2.69,
+  "AudioFilename": "I'm fine (Custom)",
+  "AudioHitSFXGroup": 0,
+  "AudioMapper": "Yasi",
+  "AudioMod": 0,
+  "AudioNotePrebufferTime": 800,
+  "AudioTimeOffset": -75,
+  "AudioVolume": 0.5,
+  "HitObjects": [
+    {
+      "Duration": 250,
+      "Time": 250,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Duration": 375,
+      "Time": 500,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Time": 500,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Duration": 1250,
+      "Time": 875,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Time": 875,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Time": 875,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Duration": 1250,
+      "Time": 2125,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Time": 2125,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Duration": 1375,
+      "Time": 3375,
+      "Track": 4,
+      "Type": 2
+    },
+    {
+      "Duration": 750,
+      "Time": 3375,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Time": 3375,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Duration": 1375,
+      "Time": 4750,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Time": 4750,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Time": 6125,
+      "Track": 1,
+      "Type": 1
+    }
+  ],
+  "TimingPoints": [
+    {
+      "BeatLength": 500,
+      "Time": 0
+    }
+  ],
+  "AudioMD5Hash": "b99a9d4210f32ec28d7903cb45e2a7e9"
+}

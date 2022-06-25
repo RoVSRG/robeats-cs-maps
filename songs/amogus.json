@@ -1,0 +1,41 @@
+{
+  "AudioArtist": "YasiCreeper / iLikeBacon_Ss",
+  "AudioAssetId": "rbxassetid://6436391970",
+  "AudioCoverImageAssetId": "rbxassetid://6505224754",
+  "AudioDescription": "sus",
+  "AudioDifficulty": 1,
+  "AudioFilename": "A m o g u s (Custom)",
+  "AudioHitSFXGroup": 0,
+  "AudioMapper": "Yasi",
+  "AudioMod": 0,
+  "AudioNotePrebufferTime": 800,
+  "AudioTimeOffset": -75,
+  "AudioVolume": 1,
+  "HitObjects": [
+    {
+      "Duration": 250,
+      "Time": 0,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Duration": 250,
+      "Time": 250,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Duration": 500,
+      "Time": 500,
+      "Track": 4,
+      "Type": 2
+    }
+  ],
+  "TimingPoints": [
+    {
+      "BeatLength": 500,
+      "Time": 0
+    }
+  ],
+  "AudioMD5Hash": "b75bed686016e1d159c71a157975fad1"
+}
