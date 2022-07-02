@@ -19,6 +19,7 @@
   "dependencies": {
     "log-update": "^4.0.0",
     "md5": "^2.3.0",
+    "migrate": "^1.7.0",
     "mongoose": "^5.12.12"
   }
 }

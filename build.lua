@@ -12,6 +12,16 @@ songMetadata.Parent = maps
 
 print("Building maps for RoBeats CS")
 
+local function clamp(num, min, max)
+    if num > max then
+        return max
+    elseif num < min then
+        return min
+    end
+
+    return num
+end
+
 local metadataOut = {
     "local SongMaps = script.Parent.SongMaps",
     "",
@@ -19,70 +29,75 @@ local metadataOut = {
 }
 
 for i, file in ipairs(dir) do
-    local mapOut = {
-        "local hitObjects = {}\n",
-        "local function note(time,track) hitObjects[#hitObjects+1]={Time=time;Type=1;Track=track;} end",
-        "local function hold(time,track,duration) hitObjects[#hitObjects+1] = {Time=time;Type=2;Track=track;Duration=duration;}  end",
-        ""
-    }
+    local jsonString
     local mapData
     
     local suc, err = pcall(function()
-        local jsonString = remodel.readFile(string.format("songs/%s", file))
+        jsonString = remodel.readFile(string.format("songs/%s", file))
         mapData = json.fromString(jsonString)
     end)
 
-    if suc then
-        for _, hitObject in pairs(mapData.HitObjects) do
-            if hitObject.Type == 1 then
-                table.insert(mapOut, string.format("note(%s,%s)", hitObject.Time, hitObject.Track))
-            elseif hitObject.Type == 2 then
-                table.insert(mapOut, string.format("hold(%s,%s,%s)", hitObject.Time, hitObject.Track, hitObject.Duration))
-            end
-        end
+    if type(mapData) == "table" then
+        if suc then
+            mapData.AudioMapData = string.format("###SongMaps:FindFirstChild(\"%s\")", file):gsub(".json", "")
 
-        mapData.AudioMapData = string.format("###SongMaps:FindFirstChild(\"%s\")", file):gsub(".json", "")
+            local object = {}
 
-        local object = {}
+            table.insert(object, "\t{")
 
-        table.insert(object, "\t{")
+            for property, value in pairs(mapData) do
+                if property ~= "HitObjects" then
+                    local propertyLine = ""
 
-        for property, value in pairs(mapData) do
-            if property ~= "HitObjects" then
-                local propertyLine = ""
-
-                if type(value) == "string" then
-                    if string.find(value, "###") then
-                        value = value:gsub("###", "")
+                    if type(value) == "string" then
+                        if string.find(value, "###") then
+                            value = value:gsub("###", "")
+                            propertyLine = string.format("\t\t%s = %s,", property, value)
+                        else
+                            value = value:gsub("\"", "\\\"")
+                            propertyLine = string.format("\t\t%s = \"%s\",", property, value)
+                        end
+                    elseif type(value) == "number" then
                         propertyLine = string.format("\t\t%s = %s,", property, value)
-                    else
-                        propertyLine = string.format("\t\t%s = \"%s\",", property, value)
                     end
-                elseif type(value) == "number" then
-                    propertyLine = string.format("\t\t%s = %s,", property, value)
-                end
-                    
-                if propertyLine ~= "" then
-                    table.insert(object, propertyLine)
+                        
+                    if propertyLine ~= "" then
+                        table.insert(object, propertyLine)
+                    end
                 end
             end
+
+            table.insert(object, "\t},")
+            table.insert(metadataOut, table.concat(object, "\n"))
+        else
+            print(err)
         end
 
-        table.insert(object, "\t},")
-        table.insert(metadataOut, table.concat(object, "\n"))
+        local mapDataFolder = Instance.new("Folder")
+        mapDataFolder.Name = file:gsub(".json", "")
+        mapDataFolder.Parent = songMaps
+
+        local serializedHitObjects = string.gsub(json.toString(mapData.HitObjects), "\n", "")
+        local numberOfSplits = math.ceil(string.len(serializedHitObjects) / 2e5)
+        
+        local splits = {}
+
+        for i = 1, numberOfSplits do
+            splits[i] = string.sub(serializedHitObjects, 2e5*(i-1)+1, clamp(2e5*i, 2e5, string.len(serializedHitObjects)))
+        end
+
+        for i, split in ipairs(splits) do
+            local mapDataValueObject = Instance.new("StringValue")
+            mapDataValueObject.Name = string.format("%d", i)
+            mapDataValueObject.Parent = mapDataFolder
+
+            remodel.setRawProperty(mapDataValueObject, "Value", "String", split)
+        end
+
+        print(string.format("Built song %d out of %d (%0.2f%% complete)", i, #dir, (i / #dir) * 100))
     else
-        print(err)
+        print(string.format("Failed to build song %s! (%0.2f%% complete)", file, (i / #dir) * 100))
     end
-
-    table.insert(mapOut, "\nreturn hitObjects")
-
-    local mapDataModuleScript = Instance.new("ModuleScript")
-    mapDataModuleScript.Name = file:gsub(".json", "")
-    mapDataModuleScript.Parent = songMaps
-
-    remodel.setRawProperty(mapDataModuleScript, "Source", "String", table.concat(mapOut, "\n"))
-    
-    print(string.format("Built song %d out of %d (%0.2f%% complete)", i, #dir, (i / #dir) * 100))
 end
 
 table.insert(metadataOut, "}")
