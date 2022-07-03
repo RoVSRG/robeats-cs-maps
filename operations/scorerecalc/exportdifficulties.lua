@@ -11,7 +11,7 @@ for i, file in ipairs(dir) do
         mapData = json.fromString(jsonString)
     end)
 
-    if suc then
+    if suc and type(mapData) == "table" then
         difficulties[mapData.AudioMD5Hash] = mapData.AudioDifficulty
         
         print((i / #dir) * 100)
