@@ -1,5 +1,4 @@
-local dir = remodel.readDir("songs")
-local md5 = require("packages/md5")
+local dir = remodel.readDir("../../songs")
 
 local difficulties = {}
 
@@ -7,7 +6,7 @@ for i, file in ipairs(dir) do
     local mapData
     
     local suc, err = pcall(function()
-        local jsonString = remodel.readFile(string.format("songs/%s", file))
+        local jsonString = remodel.readFile(string.format("../../songs/%s", file))
         mapData = json.fromString(jsonString)
     end)
 
