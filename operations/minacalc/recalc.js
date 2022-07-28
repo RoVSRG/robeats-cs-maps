@@ -55,7 +55,7 @@ const calculateOverallRating = (scores) => {
                 return false
             }
             
-            if (i <= 10) {
+            if (i + 1 <= 10) {
                 rating[skillset] += item * 1.5
             } else {
                 rating[skillset] += item
@@ -141,19 +141,24 @@ const count = db.Global.countDocuments()
 let i = 0
 
 async function main() {
-    await recalculateUser(526993347)
+    // await recalculateUser(323642976)
 
-    // for await (const player of db.Global.find({})) {
-    //     if (ids.includes(player.UserId)) {
-    //         continue
-    //     }
+    for await (const player of db.Global.find({})) {
+        if (ids.includes(player.UserId)) {
+            continue
+        }
 
-    //     await recalculateUser(player.UserId)
+        ids.push(player.UserId)
 
-    //     i++
+        await recalculateUser(player.UserId)
 
-    //     console.log(i, count, ((i / count) * 100).toFixed(2) + "%")
-    // }
+        i++
+
+        console.log(i, count, ((i / count) * 100).toFixed(2) + "%")
+
+        fs.writeFileSync("./ids.json", JSON.stringify(ids))
+    }
 }
 
 main()
+
