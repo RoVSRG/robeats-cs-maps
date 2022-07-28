@@ -154,11 +154,14 @@ async function main() {
 
         i++
 
-        console.log(i, count, ((i / count) * 100).toFixed(2) + "%")
+        if(i % 100 === 0) {
+            fs.writeFileSync("./ids.json", JSON.stringify(ids))
+        }
 
-        fs.writeFileSync("./ids.json", JSON.stringify(ids))
+        console.log(i, count, ((i / count) * 100).toFixed(2) + "%")
     }
 }
+
 
 main()
 
