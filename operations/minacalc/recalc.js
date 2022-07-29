@@ -129,7 +129,7 @@ async function recalculateUser(userId) {
 
     const overall = calculateOverallRating(await db.Plays.find({ UserId: userId }).toArray())
 
-    db.Global.updateOne({ UserId: userId }, {
+    await db.Global.updateOne({ UserId: userId }, {
         $set: {
             Rating: overall
         }
