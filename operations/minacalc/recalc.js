@@ -141,9 +141,9 @@ const count = db.Global.countDocuments()
 let i = 0
 
 async function main() {
-    // await recalculateUser(323642976)
-
     for await (const player of db.Global.find({})) {
+        i++
+        
         if (ids.includes(player.UserId)) {
             continue
         }
@@ -152,7 +152,6 @@ async function main() {
 
         await recalculateUser(player.UserId)
 
-        i++
 
         if(i % 100 === 0) {
             fs.writeFileSync("./ids.json", JSON.stringify(ids))
