@@ -145,6 +145,7 @@ async function main() {
 
     for await (const player of db.Global.find({})) {
         if (ids.includes(player.UserId)) {
+            count--
             continue
         }
 
