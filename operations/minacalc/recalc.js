@@ -129,7 +129,7 @@ async function recalculateUser(userId) {
 
     const overall = calculateOverallRating(await db.Plays.find({ UserId: userId }).toArray())
 
-    db.Global.updateOne({ UserId: userId }, {
+    await db.Global.updateOne({ UserId: userId }, {
         $set: {
             Rating: overall
         }
@@ -141,9 +141,9 @@ const count = db.Global.countDocuments()
 let i = 0
 
 async function main() {
-    // await recalculateUser(323642976)
-
     for await (const player of db.Global.find({})) {
+        i++
+        
         if (ids.includes(player.UserId)) {
             count--
             continue
@@ -153,7 +153,6 @@ async function main() {
 
         await recalculateUser(player.UserId)
 
-        i++
 
         if(i % 100 === 0) {
             fs.writeFileSync("./ids.json", JSON.stringify(ids))
