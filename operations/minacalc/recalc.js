@@ -141,15 +141,26 @@ const count = db.Global.countDocuments()
 let i = 0
 
 async function main() {
+    let userId
+
+    try {
+        userId = Number.parseInt(args?.UserId)
+    } catch { }
+
+    if (userId) {
+        await recalculateUser(userId)
+        return
+    }
+
     for await (const player of db.Global.find({})) {
         i++
         
-        if (ids.includes(player.UserId)) {
+        if (ids.includes(player._id)) {
             count--
             continue
         }
 
-        ids.push(player.UserId)
+        ids.push(player._id)
 
         await recalculateUser(player.UserId)
 
