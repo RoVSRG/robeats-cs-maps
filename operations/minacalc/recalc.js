@@ -70,12 +70,10 @@ const calculateOverallRating = (scores) => {
     return rating
 }
 
-let db = connect("localhost:27017/dev")
+let db = connect("mongodb://localhost:27017/dev")
 
 async function recalculateUser(userId) {
     const plays = await db.Plays.find({ UserId: userId }).sort({ Rating: -1 })
-
-    let ratings = []
 
     for await (const play of plays) {
         let rating = {
@@ -120,7 +118,7 @@ async function recalculateUser(userId) {
             rating = calculateRating(difficulty, play.Accuracy)
         }
         
-        await db.Plays.updateOne({ _id: play._id }, {
+        db.Plays.updateOne({ _id: play._id }, {
             $set: {
                 Rating: rating
             }
@@ -129,16 +127,22 @@ async function recalculateUser(userId) {
 
     const overall = calculateOverallRating(await db.Plays.find({ UserId: userId }).toArray())
 
-    await db.Global.updateOne({ UserId: userId }, {
+    console.log(overall)
+
+    const t = await db.Global.updateOne({ UserId: userId }, {
         $set: {
             Rating: overall
         }
     })
+
+    console.log(t)
 }
 
 const count = db.Global.countDocuments()
 
 let i = 0
+
+console.log(ids.length)
 
 async function main() {
     let userId
@@ -152,20 +156,24 @@ async function main() {
         return
     }
 
-    for await (const player of db.Global.find({})) {
+    for await (const player of db.Global.find({ Rating: { $type: "number" }  } )) {
         i++
-        
-        if (ids.includes(player._id)) {
+
+        if (ids.includes(player._id.toString())) {
+            console.log("Skipping " + player.UserId)
             count--
             continue
         }
 
         ids.push(player._id)
 
-        await recalculateUser(player.UserId)
+        if (i % 18 === 0) {
+            await recalculateUser(player.UserId)
+        } else {
+            recalculateUser(player.UserId)
+        }
 
-
-        if(i % 100 === 0) {
+        if(i % 10 === 0) {
             fs.writeFileSync("./ids.json", JSON.stringify(ids))
         }
 
