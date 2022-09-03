@@ -140,9 +140,11 @@ for i, file in ipairs(dir) do
 
         mapDifficulties[mapData.AudioMD5Hash] = difficulties
 
-        print(string.format("Built song %d out of %d (%0.2f%% complete)", i, #dir, (i / #dir) * 100))
+        if i % 10 == 0 then
+            print(string.format("Built song %d out of %d (%0.2f%% complete)", i, #dir, (i / #dir) * 100))
+        end
     else
-        print(string.format("Failed to build song %s! (%0.2f%% complete)", file, (i / #dir) * 100))
+        print(string.format("Failed to build song songs/%s (%0.2f%% complete)", file, (i / #dir) * 100))
     end
 end
 
