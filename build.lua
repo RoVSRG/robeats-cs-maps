@@ -152,4 +152,4 @@ table.insert(metadataOut, "}")
 
 remodel.setRawProperty(songDifficulties, "Source", "String", string.format("return %s", serializeTable(mapDifficulties, 1)))
 remodel.setRawProperty(songMetadata, "Source", "String", table.concat(metadataOut, "\n"))
-remodel.writeModelFile(maps, "out.rbxmx")
+remodel.writeModelFile("out.rbxmx", maps)
