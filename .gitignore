@@ -1,2 +1,8 @@
 *.rbxmx
 *.rbmx
+
+/node_modules
+
+.migrate
+.DS_Store
+operations/minacalc/ids.json

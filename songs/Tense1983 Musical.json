@@ -1,0 +1,530 @@
+{
+  "AudioArtist": "YasiCreeper / Tense1983",
+  "AudioAssetId": "rbxassetid://4575738074",
+  "AudioCoverImageAssetId": "rbxassetid://6508224809",
+  "AudioDescription": "me sae alom ram",
+  "AudioDifficulty": [
+    {
+      "Overall": 6.023580121994018,
+      "Chordjack": 3.4003473043441774,
+      "Handstream": 3.5161127328872683,
+      "Jack": 4.151508951187134,
+      "Jumpstream": 3.923186016082764,
+      "Stamina": 4.858591175079346,
+      "Stream": 3.8359979152679444,
+      "Technical": 6.023580121994018,
+      "Rate": 70
+    },
+    {
+      "Overall": 6.546418619155884,
+      "Chordjack": 4.5460443019866945,
+      "Handstream": 3.954970407485962,
+      "Jack": 4.8787592411041265,
+      "Jumpstream": 4.338715982437134,
+      "Stamina": 5.248526000976563,
+      "Stream": 4.215660953521729,
+      "Technical": 6.546418619155884,
+      "Rate": 80
+    },
+    {
+      "Overall": 7.05030312538147,
+      "Chordjack": 4.560624361038208,
+      "Handstream": 3.9301842212677003,
+      "Jack": 5.600468301773072,
+      "Jumpstream": 4.30255765914917,
+      "Stamina": 5.585349655151368,
+      "Stream": 4.120015954971314,
+      "Technical": 7.05030312538147,
+      "Rate": 90
+    },
+    {
+      "Overall": 7.357649517059326,
+      "Chordjack": 4.595324850082398,
+      "Handstream": 4.498222017288208,
+      "Jack": 6.316054201126099,
+      "Jumpstream": 4.905295085906983,
+      "Stamina": 5.910172462463379,
+      "Stream": 4.7312102794647215,
+      "Technical": 7.357649517059326,
+      "Rate": 100
+    },
+    {
+      "Overall": 7.33723726272583,
+      "Chordjack": 5.792050123214722,
+      "Handstream": 5.047011852264404,
+      "Jack": 7.0290162563323975,
+      "Jumpstream": 5.53660855293274,
+      "Stamina": 5.852338457107544,
+      "Stream": 5.478580141067505,
+      "Technical": 7.33723726272583,
+      "Rate": 110
+    },
+    {
+      "Overall": 8.590533542633057,
+      "Chordjack": 5.774553966522217,
+      "Handstream": 4.987817430496216,
+      "Jack": 7.7346882820129395,
+      "Jumpstream": 5.555562114715577,
+      "Stamina": 6.948493766784668,
+      "Stream": 5.236843156814575,
+      "Technical": 8.590533542633057,
+      "Rate": 120
+    },
+    {
+      "Overall": 8.885051250457764,
+      "Chordjack": 6.306140327453614,
+      "Handstream": 5.755308151245117,
+      "Jack": 8.43715238571167,
+      "Jumpstream": 6.326261186599732,
+      "Stamina": 7.33236894607544,
+      "Stream": 6.056530523300171,
+      "Technical": 8.885051250457764,
+      "Rate": 130
+    },
+    {
+      "Overall": 9.15355625152588,
+      "Chordjack": 5.055760145187378,
+      "Handstream": 5.190478706359864,
+      "Jack": 9.134077835083009,
+      "Jumpstream": 5.871364974975586,
+      "Stamina": 5.376646327972412,
+      "Stream": 5.36718864440918,
+      "Technical": 9.082173442840576,
+      "Rate": 140
+    },
+    {
+      "Overall": 9.93037805557251,
+      "Chordjack": 6.3595034122467045,
+      "Handstream": 5.87282280921936,
+      "Jack": 9.832751655578614,
+      "Jumpstream": 6.6216517925262455,
+      "Stamina": 7.967836189270019,
+      "Stream": 6.044866561889648,
+      "Technical": 9.881158447265625,
+      "Rate": 150
+    },
+    {
+      "Overall": 10.532589340209961,
+      "Chordjack": 8.39049654006958,
+      "Handstream": 7.157611656188965,
+      "Jack": 10.532589340209961,
+      "Jumpstream": 8.01229133605957,
+      "Stamina": 6.2352931022644045,
+      "Stream": 7.469040584564209,
+      "Technical": 9.661873912811279,
+      "Rate": 160
+    },
+    {
+      "Overall": 11.232429599761963,
+      "Chordjack": 6.647895383834839,
+      "Handstream": 6.0524488449096685,
+      "Jack": 11.232429599761963,
+      "Jumpstream": 6.908294534683228,
+      "Stamina": 6.649599552154541,
+      "Stream": 6.258026647567749,
+      "Technical": 10.622694396972657,
+      "Rate": 170
+    },
+    {
+      "Overall": 12.633570098876953,
+      "Chordjack": 8.041451454162598,
+      "Handstream": 6.20437216758728,
+      "Jack": 11.983008670806885,
+      "Jumpstream": 6.877967977523804,
+      "Stamina": 10.219606876373291,
+      "Stream": 6.354838085174561,
+      "Technical": 12.633570098876953,
+      "Rate": 180
+    },
+    {
+      "Overall": 13.024721145629883,
+      "Chordjack": 8.770160865783692,
+      "Handstream": 6.869220542907715,
+      "Jack": 12.72921380996704,
+      "Jumpstream": 7.424134826660157,
+      "Stamina": 10.389432334899903,
+      "Stream": 6.901004076004028,
+      "Technical": 12.95053768157959,
+      "Rate": 190
+    },
+    {
+      "Overall": 13.471043300628663,
+      "Chordjack": 8.92062635421753,
+      "Handstream": 7.057593154907226,
+      "Jack": 13.471043300628663,
+      "Jumpstream": 7.70348711013794,
+      "Stamina": 7.974857997894287,
+      "Stream": 7.152946329116822,
+      "Technical": 12.33555564880371,
+      "Rate": 200
+    }
+  ],
+  "AudioFilename": "Tense1983 musical (Custom)",
+  "AudioHitSFXGroup": 0,
+  "AudioMapper": "Yasi",
+  "AudioMod": 0,
+  "AudioNotePrebufferTime": 800,
+  "AudioTimeOffset": -75,
+  "AudioVolume": 2,
+  "HitObjects": [
+    {
+      "Time": 187,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Time": 187,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Time": 500,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Time": 500,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Time": 812,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Time": 812,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Time": 1187,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Time": 1187,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Time": 1562,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Time": 1562,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Time": 1562,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Time": 1562,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 1750,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Time": 1750,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Time": 1750,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Time": 1750,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 1937,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Time": 1937,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Time": 1937,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 1937,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Time": 2125,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Time": 2125,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Time": 2125,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Time": 2125,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 2375,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 2375,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Time": 2375,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Time": 2375,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Duration": 188,
+      "Time": 3312,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Time": 3312,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Time": 3312,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 3312,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Duration": 187,
+      "Time": 3500,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Time": 3500,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 3500,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Duration": 188,
+      "Time": 3687,
+      "Track": 4,
+      "Type": 2
+    },
+    {
+      "Time": 3687,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 3687,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Duration": 187,
+      "Time": 3875,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Time": 3875,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Time": 3875,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 4062,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Duration": 188,
+      "Time": 4062,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Time": 4062,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Duration": 250,
+      "Time": 4250,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Time": 4250,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Time": 4250,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 4500,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Time": 4500,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 4500,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Duration": 62,
+      "Time": 4750,
+      "Track": 4,
+      "Type": 2
+    },
+    {
+      "Duration": 125,
+      "Time": 4750,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Duration": 187,
+      "Time": 4750,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Duration": 250,
+      "Time": 4750,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Duration": 63,
+      "Time": 5062,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Duration": 125,
+      "Time": 5062,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Duration": 188,
+      "Time": 5062,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Duration": 313,
+      "Time": 5062,
+      "Track": 4,
+      "Type": 2
+    },
+    {
+      "Duration": 63,
+      "Time": 5437,
+      "Track": 4,
+      "Type": 2
+    },
+    {
+      "Duration": 125,
+      "Time": 5437,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Duration": 188,
+      "Time": 5437,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Duration": 250,
+      "Time": 5437,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Duration": 62,
+      "Time": 5750,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Duration": 125,
+      "Time": 5750,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Duration": 187,
+      "Time": 5750,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Duration": 250,
+      "Time": 5750,
+      "Track": 4,
+      "Type": 2
+    }
+  ],
+  "TimingPoints": [
+    {
+      "BeatLength": 500,
+      "Time": 0
+    }
+  ],
+  "AudioMD5Hash": "4ae50938a51b3957a1738cb22d81ca2b"
+}

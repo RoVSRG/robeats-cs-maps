@@ -1,0 +1,25 @@
+{
+  "name": "robeats-cs-songs",
+  "version": "1.0.0",
+  "description": "Song.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RoVSRG/robeats-cs-maps.git"
+  },
+  "author": "kisperal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RoVSRG/robeats-cs-maps/issues"
+  },
+  "homepage": "https://github.com/RoVSRG/robeats-cs-maps#readme",
+  "dependencies": {
+    "log-update": "^4.0.0",
+    "md5": "^2.3.0",
+    "migrate": "^1.7.0",
+    "mongoose": "^5.12.12"
+  }
+}

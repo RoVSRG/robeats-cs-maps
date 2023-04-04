@@ -1,0 +1,635 @@
+{
+  "AudioArtist": "UNDEAD CORPORATION",
+  "AudioAssetId": "rbxassetid://10719207989",
+  "AudioCoverImageAssetId": "",
+  "AudioDescription": "",
+  "AudioDifficulty": [
+    {
+      "Overall": 5.625,
+      "Chordjack": 2.3931007862091067,
+      "Handstream": 3.416400647163391,
+      "Jack": 0.9441007733345032,
+      "Jumpstream": 3.7116013526916505,
+      "Stamina": 4.3628339767456055,
+      "Stream": 5.625,
+      "Technical": 3.7161010265350343,
+      "Rate": 70
+    },
+    {
+      "Overall": 5.558894491195679,
+      "Chordjack": 2.2910354375839233,
+      "Handstream": 3.326152038574219,
+      "Jack": 1.1596492052078247,
+      "Jumpstream": 3.6114274978637697,
+      "Stamina": 4.129961585998536,
+      "Stream": 5.558894491195679,
+      "Technical": 3.7871855735778808,
+      "Rate": 80
+    },
+    {
+      "Overall": 5.634209632873535,
+      "Chordjack": 2.3175270795822143,
+      "Handstream": 3.2665102243423463,
+      "Jack": 1.3763293147087097,
+      "Jumpstream": 3.5329529285430907,
+      "Stamina": 4.302481269836426,
+      "Stream": 5.634209632873535,
+      "Technical": 3.923964500427246,
+      "Rate": 90
+    },
+    {
+      "Overall": 5.582253313064576,
+      "Chordjack": 2.4224083185195924,
+      "Handstream": 3.204076552391052,
+      "Jack": 1.5982109785079956,
+      "Jumpstream": 3.4490390539169313,
+      "Stamina": 4.3464325904846195,
+      "Stream": 5.582253313064576,
+      "Technical": 4.010411024093628,
+      "Rate": 100
+    },
+    {
+      "Overall": 5.641900491714478,
+      "Chordjack": 2.4347321033477782,
+      "Handstream": 3.1878796577453614,
+      "Jack": 1.8216460704803468,
+      "Jumpstream": 3.4378111124038697,
+      "Stamina": 4.413267660140991,
+      "Stream": 5.641900491714478,
+      "Technical": 4.14231390953064,
+      "Rate": 110
+    },
+    {
+      "Overall": 5.6408370494842535,
+      "Chordjack": 2.619849157333374,
+      "Handstream": 3.4519675970077515,
+      "Jack": 2.0430012702941895,
+      "Jumpstream": 3.702265977859497,
+      "Stamina": 4.294420051574707,
+      "Stream": 5.6408370494842535,
+      "Technical": 4.381884956359864,
+      "Rate": 120
+    },
+    {
+      "Overall": 5.849694871902466,
+      "Chordjack": 2.6180061578750613,
+      "Handstream": 3.5106382369995117,
+      "Jack": 2.259476137161255,
+      "Jumpstream": 3.7994306087493896,
+      "Stamina": 4.741150331497193,
+      "Stream": 5.849694871902466,
+      "Technical": 4.790514993667602,
+      "Rate": 130
+    },
+    {
+      "Overall": 5.866859292984009,
+      "Chordjack": 2.9749066829681396,
+      "Handstream": 3.5441885948181153,
+      "Jack": 2.4780049324035645,
+      "Jumpstream": 3.819070816040039,
+      "Stamina": 4.63960018157959,
+      "Stream": 5.866859292984009,
+      "Technical": 5.015375947952271,
+      "Rate": 140
+    },
+    {
+      "Overall": 6.101729822158814,
+      "Chordjack": 3.159810447692871,
+      "Handstream": 3.658769989013672,
+      "Jack": 2.705401110649109,
+      "Jumpstream": 3.9406504154205324,
+      "Stamina": 5.106829833984375,
+      "Stream": 6.101729822158814,
+      "Technical": 5.308740091323853,
+      "Rate": 150
+    },
+    {
+      "Overall": 6.492151737213135,
+      "Chordjack": 3.3007508754730224,
+      "Handstream": 3.8280607223510743,
+      "Jack": 2.946780824661255,
+      "Jumpstream": 4.085640764236451,
+      "Stamina": 5.457120323181153,
+      "Stream": 6.492151737213135,
+      "Technical": 5.64732027053833,
+      "Rate": 160
+    },
+    {
+      "Overall": 6.590820550918579,
+      "Chordjack": 3.458885979652405,
+      "Handstream": 3.9209874629974366,
+      "Jack": 3.181300735473633,
+      "Jumpstream": 4.198572492599488,
+      "Stamina": 5.493030166625977,
+      "Stream": 6.590820550918579,
+      "Technical": 5.911828565597534,
+      "Rate": 170
+    },
+    {
+      "Overall": 6.3393761157989506,
+      "Chordjack": 3.539838480949402,
+      "Handstream": 3.7743332862854007,
+      "Jack": 3.380573844909668,
+      "Jumpstream": 4.036840009689331,
+      "Stamina": 5.436763429641724,
+      "Stream": 6.3393761157989506,
+      "Technical": 6.036851692199707,
+      "Rate": 180
+    },
+    {
+      "Overall": 6.8495018005371096,
+      "Chordjack": 3.5836093425750732,
+      "Handstream": 3.826847505569458,
+      "Jack": 3.5796478271484378,
+      "Jumpstream": 4.110493898391724,
+      "Stamina": 5.5083088874816895,
+      "Stream": 6.8495018005371096,
+      "Technical": 6.248141956329346,
+      "Rate": 190
+    },
+    {
+      "Overall": 6.92765622138977,
+      "Chordjack": 3.675803518295288,
+      "Handstream": 3.8744320392608644,
+      "Jack": 3.7770802974700928,
+      "Jumpstream": 4.127231311798096,
+      "Stamina": 5.611951160430908,
+      "Stream": 6.92765622138977,
+      "Technical": 6.576720285415649,
+      "Rate": 200
+    }
+  ],
+  "AudioFilename": "Setsugetsu Ouka no Kuni (LIGHT)",
+  "AudioHitSFXGroup": 0,
+  "AudioMod": 0,
+  "AudioNotePrebufferTime": 1000,
+  "AudioTimeOffset": -70,
+  "AudioVolume": 0.5,
+  "HitObjects": [
+    {
+      "Duration": 545,
+      "Time": 667,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Duration": 546,
+      "Time": 1212,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Duration": 545,
+      "Time": 1758,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Duration": 546,
+      "Time": 3394,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Duration": 545,
+      "Time": 3940,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Duration": 546,
+      "Time": 4485,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Duration": 545,
+      "Time": 5031,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Time": 6667,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Duration": 546,
+      "Time": 7212,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Duration": 545,
+      "Time": 7758,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Duration": 546,
+      "Time": 8303,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Duration": 546,
+      "Time": 9394,
+      "Track": 4,
+      "Type": 2
+    },
+    {
+      "Duration": 545,
+      "Time": 9940,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Duration": 546,
+      "Time": 10485,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Duration": 545,
+      "Time": 11031,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Duration": 546,
+      "Time": 11576,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Duration": 546,
+      "Time": 13212,
+      "Track": 4,
+      "Type": 2
+    },
+    {
+      "Duration": 545,
+      "Time": 13758,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Duration": 546,
+      "Time": 14303,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Duration": 545,
+      "Time": 14849,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Duration": 546,
+      "Time": 16485,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Duration": 545,
+      "Time": 17031,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Duration": 546,
+      "Time": 17576,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Duration": 545,
+      "Time": 18122,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Time": 19758,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Duration": 546,
+      "Time": 20303,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Duration": 545,
+      "Time": 20849,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Duration": 546,
+      "Time": 21394,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Duration": 546,
+      "Time": 22485,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Duration": 545,
+      "Time": 23031,
+      "Track": 4,
+      "Type": 2
+    },
+    {
+      "Duration": 546,
+      "Time": 23576,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Duration": 545,
+      "Time": 24122,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Duration": 545,
+      "Time": 24667,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Duration": 545,
+      "Time": 25758,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Duration": 545,
+      "Time": 26849,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Duration": 546,
+      "Time": 27394,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Duration": 545,
+      "Time": 27940,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Duration": 546,
+      "Time": 29576,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Duration": 545,
+      "Time": 30122,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Duration": 545,
+      "Time": 30667,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Duration": 546,
+      "Time": 31212,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Time": 32849,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Duration": 546,
+      "Time": 33394,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Duration": 545,
+      "Time": 33940,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Duration": 546,
+      "Time": 34485,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Duration": 546,
+      "Time": 35576,
+      "Track": 4,
+      "Type": 2
+    },
+    {
+      "Duration": 545,
+      "Time": 36122,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Duration": 545,
+      "Time": 36667,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Duration": 546,
+      "Time": 37212,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Duration": 545,
+      "Time": 37758,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Duration": 546,
+      "Time": 39394,
+      "Track": 4,
+      "Type": 2
+    },
+    {
+      "Duration": 545,
+      "Time": 39940,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Duration": 546,
+      "Time": 40485,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Duration": 545,
+      "Time": 41031,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Duration": 545,
+      "Time": 42667,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Duration": 546,
+      "Time": 43212,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Duration": 545,
+      "Time": 43758,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Duration": 546,
+      "Time": 44303,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Time": 45940,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Duration": 546,
+      "Time": 46485,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Duration": 545,
+      "Time": 47031,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Duration": 546,
+      "Time": 47576,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Duration": 545,
+      "Time": 48667,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Duration": 681,
+      "Time": 49212,
+      "Track": 4,
+      "Type": 2
+    },
+    {
+      "Duration": 882,
+      "Time": 49893,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Duration": 1144,
+      "Time": 50775,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Duration": 6545,
+      "Time": 51919,
+      "Track": 3,
+      "Type": 2
+    }
+  ],
+  "NpsGraph": [
+    1.5,
+    1,
+    1,
+    1.5,
+    1.5,
+    1.5,
+    1,
+    1,
+    1.5,
+    1,
+    1.5,
+    1.5,
+    1.5,
+    1.5,
+    0.5,
+    1.5,
+    1.5,
+    1,
+    2,
+    1,
+    1,
+    1.5,
+    1,
+    1.5,
+    1.5,
+    1
+  ],
+  "TimingPoints": [
+    {
+      "BeatLength": 545.454545454546,
+      "Time": 122
+    },
+    {
+      "BeatLength": 681.818181818182,
+      "Time": 49212
+    },
+    {
+      "BeatLength": 681.818181818182,
+      "Time": 49212
+    },
+    {
+      "BeatLength": 882.352941176471,
+      "Time": 49893
+    },
+    {
+      "BeatLength": 882.352941176471,
+      "Time": 49893
+    },
+    {
+      "BeatLength": 1165.04854368932,
+      "Time": 50775
+    },
+    {
+      "BeatLength": 1165.04854368932,
+      "Time": 50775
+    },
+    {
+      "BeatLength": 1090.90909090909,
+      "Time": 51919
+    },
+    {
+      "BeatLength": 1090.90909090909,
+      "Time": 51919
+    }
+  ],
+  "AudioMD5Hash": "56554424f0ae6ce53c524844dacda99c"
+}

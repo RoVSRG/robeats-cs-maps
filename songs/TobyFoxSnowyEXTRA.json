@@ -1,0 +1,1864 @@
+{
+  "AudioArtist": "Toby Fox",
+  "AudioAssetId": "rbxassetid://10719200522",
+  "AudioCoverImageAssetId": "",
+  "AudioDescription": "",
+  "AudioDifficulty": [
+    {
+      "Overall": 8.083800315856934,
+      "Chordjack": 4.290300607681274,
+      "Handstream": 6.150600099563599,
+      "Jack": 3.1968011140823367,
+      "Jumpstream": 7.89300127029419,
+      "Stamina": 6.278307580947876,
+      "Stream": 7.704900741577148,
+      "Technical": 8.083800315856934,
+      "Rate": 70
+    },
+    {
+      "Overall": 9.269099807739257,
+      "Chordjack": 4.477500772476197,
+      "Handstream": 6.929099893569947,
+      "Jack": 3.9213003158569335,
+      "Jumpstream": 8.867701435089112,
+      "Stamina": 7.3873134613037115,
+      "Stream": 8.402400398254395,
+      "Technical": 9.269099807739257,
+      "Rate": 80
+    },
+    {
+      "Overall": 10.33740005493164,
+      "Chordjack": 4.813200902938843,
+      "Handstream": 7.510501098632813,
+      "Jack": 4.672800350189209,
+      "Jumpstream": 9.686700439453125,
+      "Stamina": 8.16961727142334,
+      "Stream": 8.902801036834717,
+      "Technical": 10.33740005493164,
+      "Rate": 90
+    },
+    {
+      "Overall": 11.087999725341797,
+      "Chordjack": 5.126400518417358,
+      "Handstream": 8.073900604248047,
+      "Jack": 5.43240065574646,
+      "Jumpstream": 10.268100357055664,
+      "Stamina": 8.616698169708252,
+      "Stream": 9.533700370788575,
+      "Technical": 11.087999725341797,
+      "Rate": 100
+    },
+    {
+      "Overall": 11.973600769042969,
+      "Chordjack": 5.5377003192901615,
+      "Handstream": 8.673300933837892,
+      "Jack": 6.246000051498413,
+      "Jumpstream": 11.073599910736084,
+      "Stamina": 9.438079833984375,
+      "Stream": 10.570499897003174,
+      "Technical": 11.973600769042969,
+      "Rate": 110
+    },
+    {
+      "Overall": 12.791699409484863,
+      "Chordjack": 6.069600391387939,
+      "Handstream": 9.134101009368896,
+      "Jack": 7.095601987838745,
+      "Jumpstream": 11.838601112365723,
+      "Stamina": 10.072334289550781,
+      "Stream": 11.295000171661377,
+      "Technical": 12.791699409484863,
+      "Rate": 120
+    },
+    {
+      "Overall": 13.552202224731445,
+      "Chordjack": 6.315300178527832,
+      "Handstream": 10.010700988769532,
+      "Jack": 7.946100425720215,
+      "Jumpstream": 12.325500583648681,
+      "Stamina": 10.821861934661866,
+      "Stream": 11.930399608612062,
+      "Technical": 13.552202224731445,
+      "Rate": 130
+    },
+    {
+      "Overall": 14.342012786865235,
+      "Chordjack": 6.865483045578003,
+      "Handstream": 10.443563175201417,
+      "Jack": 8.803009986877441,
+      "Jumpstream": 13.384496784210205,
+      "Stamina": 11.378830146789552,
+      "Stream": 12.461180877685548,
+      "Technical": 14.342012786865235,
+      "Rate": 140
+    },
+    {
+      "Overall": 14.8878324508667,
+      "Chordjack": 6.747338390350342,
+      "Handstream": 11.39029712677002,
+      "Jack": 9.541637134552003,
+      "Jumpstream": 14.18104591369629,
+      "Stamina": 11.930136108398438,
+      "Stream": 12.855370330810548,
+      "Technical": 14.8878324508667,
+      "Rate": 150
+    },
+    {
+      "Overall": 16.189446258544923,
+      "Chordjack": 7.49587984085083,
+      "Handstream": 11.717191028594971,
+      "Jack": 10.274696445465088,
+      "Jumpstream": 14.911911392211914,
+      "Stamina": 12.965642166137696,
+      "Stream": 13.90286865234375,
+      "Technical": 16.189446258544923,
+      "Rate": 160
+    },
+    {
+      "Overall": 16.751316261291503,
+      "Chordjack": 7.563486957550049,
+      "Handstream": 11.96944227218628,
+      "Jack": 10.994488906860353,
+      "Jumpstream": 15.328385925292968,
+      "Stamina": 13.281251049041748,
+      "Stream": 13.984463596343994,
+      "Technical": 16.751316261291503,
+      "Rate": 170
+    },
+    {
+      "Overall": 17.523797607421876,
+      "Chordjack": 7.897663593292236,
+      "Handstream": 12.47940788269043,
+      "Jack": 11.706324005126953,
+      "Jumpstream": 15.840901565551759,
+      "Stamina": 13.916558647155762,
+      "Stream": 14.716102409362794,
+      "Technical": 17.523797607421876,
+      "Rate": 180
+    },
+    {
+      "Overall": 17.93299713134766,
+      "Chordjack": 7.935741519927979,
+      "Handstream": 12.529398250579835,
+      "Jack": 12.415153312683106,
+      "Jumpstream": 16.014708709716796,
+      "Stamina": 14.31794843673706,
+      "Stream": 14.678733444213867,
+      "Technical": 17.93299713134766,
+      "Rate": 190
+    },
+    {
+      "Overall": 18.52023868560791,
+      "Chordjack": 8.76566677093506,
+      "Handstream": 13.075746631622314,
+      "Jack": 13.11720027923584,
+      "Jumpstream": 16.991618156433105,
+      "Stamina": 14.683502197265625,
+      "Stream": 15.720165252685547,
+      "Technical": 18.52023868560791,
+      "Rate": 200
+    }
+  ],
+  "AudioFilename": "Snowy (EXTRA)",
+  "AudioHitSFXGroup": 0,
+  "AudioMod": 0,
+  "AudioNotePrebufferTime": 1000,
+  "AudioTimeOffset": -70,
+  "AudioVolume": 0.5,
+  "HitObjects": [
+    {
+      "Time": 88,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Duration": 983,
+      "Time": 88,
+      "Track": 4,
+      "Type": 2
+    },
+    {
+      "Time": 1071,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Time": 1071,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 1563,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 1809,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Time": 2055,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Duration": 492,
+      "Time": 2055,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Duration": 491,
+      "Time": 2547,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Time": 3038,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Time": 3038,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Time": 3100,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Time": 3161,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 3530,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Time": 4022,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Duration": 984,
+      "Time": 4022,
+      "Track": 4,
+      "Type": 2
+    },
+    {
+      "Time": 5006,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Time": 5006,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 5497,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 5743,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Time": 5989,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Duration": 492,
+      "Time": 5989,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Duration": 492,
+      "Time": 6481,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Time": 6973,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Time": 6973,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Time": 7034,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Time": 7096,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 7465,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Time": 7956,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Duration": 984,
+      "Time": 7956,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Time": 8940,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Time": 8940,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Time": 9432,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 9678,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Duration": 491,
+      "Time": 9924,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Time": 9924,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Duration": 492,
+      "Time": 10415,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Time": 10907,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Time": 10907,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Time": 10969,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Time": 11030,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 11645,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Time": 11891,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Duration": 983,
+      "Time": 11891,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Time": 12874,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Time": 12874,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Duration": 984,
+      "Time": 13858,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Time": 14842,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Time": 14842,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Time": 15825,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Duration": 984,
+      "Time": 15825,
+      "Track": 4,
+      "Type": 2
+    },
+    {
+      "Time": 16809,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Time": 16809,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 17301,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 17547,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Time": 17792,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Duration": 492,
+      "Time": 17792,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Duration": 492,
+      "Time": 18284,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Time": 18776,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Time": 18776,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Time": 18837,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Time": 18899,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 19268,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Time": 19760,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Duration": 983,
+      "Time": 19760,
+      "Track": 4,
+      "Type": 2
+    },
+    {
+      "Time": 20743,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Time": 20743,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 21235,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 21481,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Time": 21727,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Duration": 492,
+      "Time": 21727,
+      "Track": 4,
+      "Type": 2
+    },
+    {
+      "Duration": 491,
+      "Time": 22219,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Time": 22710,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Time": 22710,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Time": 22772,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Time": 22833,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 23202,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Time": 23694,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Duration": 984,
+      "Time": 23694,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Time": 24678,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Time": 24678,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Time": 25169,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 25415,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Time": 25661,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Duration": 492,
+      "Time": 25661,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Duration": 492,
+      "Time": 26153,
+      "Track": 4,
+      "Type": 2
+    },
+    {
+      "Time": 26645,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Time": 26645,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Duration": 492,
+      "Time": 26891,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Time": 27383,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Duration": 984,
+      "Time": 27628,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Time": 27628,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Time": 28612,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Time": 28612,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Duration": 983,
+      "Time": 29596,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Time": 30579,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Time": 30579,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Duration": 1352,
+      "Time": 31563,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Time": 31563,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Duration": 984,
+      "Time": 31563,
+      "Track": 4,
+      "Type": 2
+    },
+    {
+      "Time": 32547,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 32547,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Duration": 369,
+      "Time": 33038,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Duration": 123,
+      "Time": 33284,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Duration": 246,
+      "Time": 33530,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Duration": 246,
+      "Time": 33530,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Duration": 492,
+      "Time": 33530,
+      "Track": 4,
+      "Type": 2
+    },
+    {
+      "Duration": 492,
+      "Time": 34022,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Time": 34514,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Duration": 492,
+      "Time": 34514,
+      "Track": 4,
+      "Type": 2
+    },
+    {
+      "Time": 34575,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 34637,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Duration": 491,
+      "Time": 35006,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Duration": 1353,
+      "Time": 35497,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Time": 35497,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Duration": 984,
+      "Time": 35497,
+      "Track": 4,
+      "Type": 2
+    },
+    {
+      "Time": 36481,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 36481,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Duration": 369,
+      "Time": 36973,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Duration": 123,
+      "Time": 37219,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Duration": 245,
+      "Time": 37465,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Duration": 245,
+      "Time": 37465,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Duration": 491,
+      "Time": 37465,
+      "Track": 4,
+      "Type": 2
+    },
+    {
+      "Duration": 492,
+      "Time": 37956,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Time": 38448,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Duration": 492,
+      "Time": 38448,
+      "Track": 4,
+      "Type": 2
+    },
+    {
+      "Time": 38510,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 38571,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Duration": 369,
+      "Time": 38940,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Duration": 1352,
+      "Time": 39432,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Time": 39432,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Duration": 983,
+      "Time": 39432,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Time": 40415,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 40415,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Duration": 369,
+      "Time": 40907,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Duration": 123,
+      "Time": 41153,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Duration": 246,
+      "Time": 41399,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Duration": 246,
+      "Time": 41399,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Duration": 492,
+      "Time": 41399,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Duration": 492,
+      "Time": 41891,
+      "Track": 4,
+      "Type": 2
+    },
+    {
+      "Time": 42383,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Time": 42383,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 42444,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Time": 42506,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Time": 43120,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Time": 43366,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Duration": 984,
+      "Time": 43366,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Time": 44350,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Time": 44350,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Duration": 984,
+      "Time": 45333,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Time": 46317,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Time": 46317,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Duration": 1352,
+      "Time": 47301,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Time": 47301,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Duration": 983,
+      "Time": 47301,
+      "Track": 4,
+      "Type": 2
+    },
+    {
+      "Time": 48284,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 48284,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Duration": 369,
+      "Time": 48776,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Duration": 123,
+      "Time": 49022,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Duration": 246,
+      "Time": 49268,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Duration": 246,
+      "Time": 49268,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Duration": 492,
+      "Time": 49268,
+      "Track": 4,
+      "Type": 2
+    },
+    {
+      "Duration": 491,
+      "Time": 49760,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Time": 50251,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Duration": 492,
+      "Time": 50251,
+      "Track": 4,
+      "Type": 2
+    },
+    {
+      "Time": 50313,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 50374,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Duration": 492,
+      "Time": 50743,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Duration": 1352,
+      "Time": 51235,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Time": 51235,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Duration": 984,
+      "Time": 51235,
+      "Track": 4,
+      "Type": 2
+    },
+    {
+      "Time": 52219,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 52219,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Duration": 369,
+      "Time": 52710,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Duration": 123,
+      "Time": 52956,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Duration": 246,
+      "Time": 53202,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Duration": 246,
+      "Time": 53202,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Duration": 492,
+      "Time": 53202,
+      "Track": 4,
+      "Type": 2
+    },
+    {
+      "Duration": 492,
+      "Time": 53694,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Time": 54186,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Duration": 492,
+      "Time": 54186,
+      "Track": 4,
+      "Type": 2
+    },
+    {
+      "Time": 54247,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 54309,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Duration": 369,
+      "Time": 54678,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Duration": 1353,
+      "Time": 55169,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Time": 55169,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Duration": 984,
+      "Time": 55169,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Time": 56153,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 56153,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Duration": 369,
+      "Time": 56645,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Duration": 123,
+      "Time": 56891,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Duration": 246,
+      "Time": 57137,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Duration": 246,
+      "Time": 57137,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Duration": 491,
+      "Time": 57137,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Duration": 492,
+      "Time": 57628,
+      "Track": 4,
+      "Type": 2
+    },
+    {
+      "Time": 58120,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Time": 58120,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Duration": 492,
+      "Time": 58366,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Time": 58858,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Duration": 983,
+      "Time": 59104,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Time": 59104,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Time": 60087,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Time": 60087,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Duration": 984,
+      "Time": 61071,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Time": 62055,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Time": 62055,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Time": 63038,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Duration": 984,
+      "Time": 63038,
+      "Track": 4,
+      "Type": 2
+    },
+    {
+      "Time": 64022,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Time": 64022,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 64514,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 64760,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Duration": 491,
+      "Time": 65006,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Time": 65006,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Duration": 492,
+      "Time": 65497,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Time": 65989,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Duration": 738,
+      "Time": 65989,
+      "Track": 4,
+      "Type": 2
+    },
+    {
+      "Time": 66727,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Duration": 983,
+      "Time": 66973,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Time": 66973,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Time": 67219,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Duration": 491,
+      "Time": 67465,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Time": 67956,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Time": 67956,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Duration": 984,
+      "Time": 68940,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Time": 69924,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Time": 69924,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Time": 70907,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Duration": 984,
+      "Time": 70907,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Time": 71891,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Time": 71891,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 72383,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 72628,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Duration": 492,
+      "Time": 72874,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Time": 72874,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Duration": 492,
+      "Time": 73366,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Time": 73858,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Duration": 738,
+      "Time": 73858,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Time": 74596,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Time": 74842,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Duration": 983,
+      "Time": 74842,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Time": 75825,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Time": 75825,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Duration": 983,
+      "Time": 76809,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Time": 77792,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Time": 77792,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Duration": 984,
+      "Time": 78776,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Time": 78776,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Time": 79760,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Time": 79760,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 80251,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 80497,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Duration": 492,
+      "Time": 80743,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Time": 80743,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Duration": 492,
+      "Time": 81235,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Time": 81727,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Duration": 738,
+      "Time": 81727,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Time": 82465,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Duration": 984,
+      "Time": 82710,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Time": 82710,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Time": 82956,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Duration": 492,
+      "Time": 83202,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Time": 83694,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Time": 83694,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Time": 84186,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 84555,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Time": 84616,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Duration": 983,
+      "Time": 84678,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Time": 84678,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Time": 85661,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Time": 85661,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Duration": 983,
+      "Time": 86645,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Time": 87628,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Time": 87628,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Time": 88120,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 88366,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Time": 88612,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Duration": 492,
+      "Time": 88612,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Duration": 492,
+      "Time": 89104,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Time": 89596,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Duration": 737,
+      "Time": 89596,
+      "Track": 4,
+      "Type": 2
+    },
+    {
+      "Time": 90333,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 90579,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Duration": 984,
+      "Time": 90579,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Time": 91563,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Time": 91563,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Time": 92055,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 92301,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Time": 92547,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Duration": 491,
+      "Time": 92547,
+      "Track": 2,
+      "Type": 2
+    },
+    {
+      "Duration": 492,
+      "Time": 93038,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Time": 93530,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Duration": 738,
+      "Time": 93530,
+      "Track": 4,
+      "Type": 2
+    },
+    {
+      "Time": 94268,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Time": 94514,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Duration": 983,
+      "Time": 94514,
+      "Track": 3,
+      "Type": 2
+    },
+    {
+      "Time": 95497,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Time": 95497,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Duration": 984,
+      "Time": 96481,
+      "Track": 1,
+      "Type": 2
+    },
+    {
+      "Time": 97465,
+      "Track": 3,
+      "Type": 1
+    },
+    {
+      "Time": 97465,
+      "Track": 4,
+      "Type": 1
+    },
+    {
+      "Time": 97956,
+      "Track": 2,
+      "Type": 1
+    },
+    {
+      "Time": 98448,
+      "Track": 1,
+      "Type": 1
+    },
+    {
+      "Duration": 3935,
+      "Time": 98448,
+      "Track": 4,
+      "Type": 2
+    }
+  ],
+  "NpsGraph": [
+    3,
+    4,
+    4,
+    4,
+    3,
+    4,
+    1.5,
+    2,
+    3,
+    4,
+    3,
+    4,
+    3,
+    3.5,
+    1.5,
+    2.5,
+    3.5,
+    4.5,
+    4,
+    4,
+    4,
+    3.5,
+    1.5,
+    2.5,
+    4,
+    4,
+    4,
+    4,
+    4,
+    3,
+    1.5,
+    2,
+    4.5,
+    3.5,
+    1.5,
+    2,
+    3.5,
+    2.5,
+    1.5,
+    2,
+    3.5,
+    3.5,
+    3.5,
+    1.5,
+    3.5,
+    2.5,
+    3.5,
+    2.5,
+    2,
+    1
+  ],
+  "TimingPoints": [
+    {
+      "BeatLength": 983.606557377049,
+      "Time": 88
+    }
+  ],
+  "AudioMD5Hash": "ebe7e04972d1cde419a98ffc01dd6af7"
+}

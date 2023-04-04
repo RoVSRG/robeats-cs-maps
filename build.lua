@@ -2,118 +2,154 @@ local dir = remodel.readDir("songs")
 local md5 = require("packages/md5")
 
 local maps = Instance.new("Model")
-local songMaps = Instance.new("Folder")
 local songMetadata = Instance.new("ModuleScript")
+local songMaps = Instance.new("Folder")
+local songDifficulties = Instance.new("ModuleScript")
+
 maps.Name = "Songs"
 songMaps.Name = "SongMaps"
 songMetadata.Name = "SongMetadata"
+songDifficulties.Name = "SongDifficulties"
+
 songMaps.Parent = maps
 songMetadata.Parent = maps
+songDifficulties.Parent = maps
 
 print("Building maps for RoBeats CS")
 
-for i, file in ipairs(dir) do
-    local out = {
-        "local hit_objects = {}\n",
-        "local function note(time,track) hit_objects[#hit_objects+1]={Time=time;Type=1;Track=track;} end",
-        "local function hold(time,track,duration) hit_objects[#hit_objects+1] = {Time=time;Type=2;Track=track;Duration=duration;}  end",
-        ""
-    }
-    local map_data
-    
-    local suc = pcall(function()
-        map_data = require(string.format("songs/%s", file):gsub(".lua", ""))
-    end)
-
-    if suc then
-        for _, hit_object in pairs(map_data.HitObjects) do
-            if hit_object.Type == 1 then
-                table.insert(out, string.format("note(%s,%s)", hit_object.Time, hit_object.Track))
-            elseif hit_object.Type == 2 then
-                table.insert(out, string.format("hold(%s,%s,%s)", hit_object.Time, hit_object.Track, hit_object.Duration))
-            end
-        end
+local function clamp(num, min, max)
+    if num > max then
+        return max
+    elseif num < min then
+        return min
     end
 
-    table.insert(out, "\nreturn hit_objects")
-
-    local map_data_module_script = Instance.new("ModuleScript")
-    remodel.setRawProperty(map_data_module_script, "Source", "String", table.concat(out, "\n"))
-    map_data_module_script.Name = file:gsub(".lua", "")
-    map_data_module_script.Parent = songMaps
-
-    print(string.format("Built song %d out of %d (%0f%% complete)", i, #dir, (i / #dir) * 100))
+    return num
 end
 
-local out = {
+local metadataOut = {
     "local SongMaps = script.Parent.SongMaps",
+    "local SongDifficulties = require(script.Parent.SongDifficulties)",
     "",
     "return {"
 }
 
+local function concat(tbl, sep)
+    local str = ""
+    for i, v in ipairs(tbl) do
+        str = str .. v .. sep
+    end
+    return str
+end
+
+local function serializeTable(table, level)
+    local indent = string.rep("\t", level)
+    local out = {}
+
+    for k, v in pairs(table) do
+        local serKey
+
+        if type(k) == "string" then
+            serKey = "[\"" .. tostring(k) .. "\"]"
+        else
+            serKey = "[" .. tostring(k) .. "]"
+        end
+
+        if type(v) == "table" then
+            out[#out + 1] = indent .. serKey .. " = " .. serializeTable(v, level + 1)
+        else
+            out[#out + 1] = indent .. serKey .. " = " .. tostring(v)
+        end
+    end
+
+    return "{\n" .. concat(out, ",\n") .. string.rep("\t", level - 1) .. "}"
+end
+
+local mapDifficulties = {}
+
 for i, file in ipairs(dir) do
-    local map_data
+    local jsonString
+    local mapData
     
-    local suc = pcall(function()
-        map_data = require(string.format("songs/%s", file):gsub(".lua", ""))
+    local suc, err = pcall(function()
+        jsonString = remodel.readFile(string.format("songs/%s", file))
+        mapData = json.fromString(jsonString)
     end)
 
-    if suc then
-        local s = ""
+    if type(mapData) == "table" then
+        local difficulties = mapData.AudioDifficulty
 
-        for _, hitOb in pairs(map_data.HitObjects) do
-            s = s .. string.format("%s%s", hitOb.Time, hitOb.Track)
-        end
+        if suc then
+            mapData.AudioMapData = string.format("###SongMaps:FindFirstChild(\"%s\")", file):gsub(".json", "")
+            mapData.AudioDifficulty = string.format("###SongDifficulties[\"%s\"]", mapData.AudioMD5Hash)
 
-        map_data.AudioMD5Hash = md5.tohex(md5.sum(md5.tohex(s)))
-        map_data.AudioMapData = string.format("###SongMaps:FindFirstChild(\"%s\")", file):gsub(".lua", "")
+            local object = {}
 
-        local object = {}
+            table.insert(object, "\t{")
 
+            for property, value in pairs(mapData) do
+                if property ~= "HitObjects" and property ~= "NpsGraph" and property ~= "TimingPoints" then
+                    local propertyLine = ""
 
-        table.insert(object, "\t{")
-
-        for property, value in pairs(map_data) do
-            local canDo = true
-
-            for m = 97, 121, 1 do
-                if string.char(m) == string.sub(property, 1, 1) then
-                    canDo = false
-                    break
-                end
-            end
-
-            if property ~= "HitObjects" and canDo then
-                local propertyLine = ""
-
-                if type(value) == "string" then
-                    if string.find(value, "###") then
-                        value = value:gsub("###", "")
+                    if type(value) == "string" then
+                        if string.find(value, "###") then
+                            value = value:gsub("###", "")
+                            propertyLine = string.format("\t\t%s = %s,", property, value)
+                        else
+                            value = value:gsub("\"", "\\\"")
+                            propertyLine = string.format("\t\t%s = \"%s\",", property, value)
+                        end
+                    elseif type(value) == "number" then
                         propertyLine = string.format("\t\t%s = %s,", property, value)
-                    else
-                        propertyLine = string.format("\t\t%s = \"%s\",", property, value)
+                    elseif type(value) == "table" then
+                        propertyLine = string.format("\t\t%s = %s,", property, serializeTable(value, 3))
                     end
-                elseif type(value) == "number" then
-                    propertyLine = string.format("\t\t%s = %s,", property, value)
-                end
-                    
-                if propertyLine ~= "" then
-                    table.insert(object, propertyLine)
+                        
+                    if propertyLine ~= "" then
+                        table.insert(object, propertyLine)
+                    end
                 end
             end
+
+            table.insert(object, "\t},")
+            table.insert(metadataOut, table.concat(object, "\n"))
+        else
+            print(err)
         end
 
-        table.insert(object, "\t},")
+        local mapDataFolder = Instance.new("Folder")
+        mapDataFolder.Name = file:gsub(".json", "")
+        mapDataFolder.Parent = songMaps
 
-        table.insert(out, table.concat(object, "\n"))
+        local serializedHitObjects = string.gsub(json.toString(mapData.HitObjects), "\n", "")
+        local numberOfSplits = math.ceil(string.len(serializedHitObjects) / 2e5)
+        
+        local splits = {}
 
-        print(string.format("Built metadata for song %d out of %d (%0f%% complete)", i, #dir, (i / #dir) * 100))
+        for i = 1, numberOfSplits do
+            splits[i] = string.sub(serializedHitObjects, 2e5*(i-1)+1, clamp(2e5*i, 2e5, string.len(serializedHitObjects)))
+        end
+
+        for i, split in ipairs(splits) do
+            local mapDataValueObject = Instance.new("StringValue")
+            mapDataValueObject.Name = string.format("%d", i)
+            mapDataValueObject.Parent = mapDataFolder
+
+            remodel.setRawProperty(mapDataValueObject, "Value", "String", split)
+        end
+
+        mapDifficulties[mapData.AudioMD5Hash] = difficulties
+
+        if i % 10 == 0 then
+            print(string.format("Built song %d out of %d (%0.2f%% complete)", i, #dir, (i / #dir) * 100))
+        end
+    else
+        print(string.format("Failed to build song songs/%s (%0.2f%% complete)", file, (i / #dir) * 100))
     end
 end
 
-table.insert(out, "}")
+table.insert(metadataOut, "}")
 
-remodel.setRawProperty(songMetadata, "Source", "String", table.concat(out, "\n"))
-
-remodel.writeModelFile(maps, "out.rbxmx")
-
+remodel.setRawProperty(songDifficulties, "Source", "String", string.format("return %s", serializeTable(mapDifficulties, 1)))
+remodel.setRawProperty(songMetadata, "Source", "String", table.concat(metadataOut, "\n"))
+remodel.writeModelFile("out.rbxmx", maps)
