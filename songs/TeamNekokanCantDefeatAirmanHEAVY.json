@@ -159,7 +159,8 @@
       "Rate": 200
     }
   ],
-  "AudioFilename": "Can't Defeat Airman (HEAVY)",
+  "AudioFilename": "Can't Defeat Airman",
+  "AudioMapper": "OneRing",
   "AudioHitSFXGroup": 0,
   "AudioMod": 0,
   "AudioNotePrebufferTime": 1000,
